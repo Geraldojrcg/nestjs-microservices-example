@@ -1,0 +1,46 @@
+### GET USERS
+GET http://localhost:3001/users HTTP/1.1
+
+### CREATE USER
+POST http://localhost:3001/users/signup HTTP/1.1
+content-type: application/json
+
+{
+    "name": "User 12",
+    "email": "user12@email.com"
+}
+
+### UPDATE USER
+PATCH http://localhost:3001/users/11 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "User Updated"
+}
+
+### DELETE USER
+DELETE http://localhost:3001/users/11 HTTP/1.1
+
+### GET USER POSTS
+GET http://localhost:3001/users/4/posts HTTP/1.1
+
+### GET POSTS
+GET http://localhost:3001/posts HTTP/1.1
+
+### CREATE POST
+POST http://localhost:3001/posts HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Test post",
+    "content": "https://slack.prisma.io",
+    "published": true,
+    "viewCount": 0,
+    "authorId": 4
+}
+
+### DELETE POST
+DELETE http://localhost:3001/posts/1 HTTP/1.1
+
+### INCREMENT VIEW COUNT
+PUT http://localhost:3001/posts/2/increment-views HTTP/1.1
