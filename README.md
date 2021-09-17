@@ -1,5 +1,9 @@
 # nestjs-microservices-example
-### A basic example showing how microservices architecture works in nestjs with kafka
+### A basic example showing how microservices architecture works using nestjs and kafka
+
+## Services description
+#### Monilith: A sample blog api example
+#### Mailer: Service for sending emails to contacts
 
 ## How to run the example (needs docker and docker-compose)
 -  Enter in kafka folder and execute the docker-compose.yaml file 
